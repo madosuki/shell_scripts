@@ -4,6 +4,7 @@ rm -rf $HOME/Library/Developer/Xamarin
 rm -rf $HOME/Library/Preferences/VisualStudio
 rm -rf $HOME/Library/Caches/VisualStudio
 rm -rf $HOME/Library/Logs/VisualStudio
+rm -rf $HOME/Library/Caches/Xamarin
 rm -rf $HOME/Library/Caches/XamarinInstaller
 rm -rf $HOME/Library/Xamarin
 rm -rf $HOME/.local/share/Xamarin*
