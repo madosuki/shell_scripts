@@ -25,3 +25,4 @@ rm -rf $HOME/Library/Xamarin
 rm -rf $HOME/.local/share/Xamarin*
 rm -rf $HOME/.local/share/MonoForAndroid
 rm -rf $HOME/Library/Logs/XamarinInstaller
+sudo /Library/Extensions/intelhaxm.kext/Contents/Resources/uninstall.sh
