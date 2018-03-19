@@ -1,0 +1,1 @@
+ffmpeg -i title10.mkv -map 0:0 -map 0:2 -c:v libx264 -crf 18 -me_method umh -x264opts colormatrix=smpte170m -x264opts direct=auto -bf 5 -b_strategy 2 -subq 8 -vf yadif -c:a:0 libfdk_aac -b:a:0 256k a.mp4
