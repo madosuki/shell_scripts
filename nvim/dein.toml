@@ -1,0 +1,17 @@
+[[plugins]]
+repo = "/Users/kouf/dein/repos/github.com/Shougo/dein.vim"
+
+[[plugins]]
+repo = "Shougo/neosnippet.vim"
+
+[[plugins]]
+repo = "Shougo/neosnippet-snippets"
+
+[[plugins]]
+repo = "Shougo/deol.nvim"
+
+[[plugins]]
+repo = "Shougo/neco-vim"
+
+[[plugins]]
+repo = "Shougo/neco-syntax"

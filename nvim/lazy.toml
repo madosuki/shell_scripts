@@ -1,0 +1,46 @@
+[[plugins]]
+repo = "Shougo/deoplete.nvim"
+hook_source = '''
+let g:deoplete#enable_at_startup = 1
+'''
+on_i = 1
+
+[[plugins]]
+repo = "OmniSharp/omnisharp-vim"
+on_ft = ["cs", "fs", "fsx"]
+hook_source = '''
+let g:OmniSharp_server_path = '/Users/kouf/omnisharp.http-osx/omnisharp/OmniSharp.exe'
+'''
+on_source = ["deoplete.nvim"]
+
+[[plugins]]
+repo = "Robzz/deoplete-omnisharp"
+on_source = ["omnisharp-vim"]
+
+[[plugins]]
+repo = "zchee/deoplete-clang"
+on_ft = ["c", "h", "cpp", "hpp"]
+hook_source = '''
+let g:deoplete#sources#clang#libclang_path = "/usr/local/Cellar/llvm/6.0.0/lib/libclang.dylib"
+let g:deoplete#sources#clang#clang_header = "/usr/local/include"
+'''
+
+[[plugins]]
+repo = "zchee/deoplete-jedi"
+on_ft = ["py"]
+
+[[plugins]]
+repo = "fatih/vim-go"
+on_ft = ["go"]
+
+[[plugins]]
+repo = "rust-lang/rust.vim"
+on_ft = ["rs"]
+
+[[plugins]]
+repo = "zchee/deoplete-zsh"
+on_ft = ["sh", "zshrc", "zshenv"]
+
+[[plugins]]
+repo = "cohama/lexima.vim"
+on_i = 1
