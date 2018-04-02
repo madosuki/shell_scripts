@@ -7,4 +7,4 @@ echo "Please to chapter number"
 read to
 echo "Last Input output name."
 read out
-mkvmerge -o ${out} --split chapters:${from},${to} ${1}
+mkvmerge -o ${out}.mkv --split chapters:${from},${to} ${1}

@@ -44,3 +44,15 @@ on_ft = ["sh", "zshrc", "zshenv"]
 [[plugins]]
 repo = "cohama/lexima.vim"
 on_i = 1
+
+[[plugins]]
+repo = "posva/vim-vue"
+on_ft = ["vue"]
+
+[[plugins]]
+repo = "pangloss/vim-javascript"
+on_ft = ["js"]
+
+[[plugins]]
+repo = "jdonaldson/vaxe"
+on_ft = ["hs"]
