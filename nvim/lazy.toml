@@ -54,5 +54,5 @@ repo = "pangloss/vim-javascript"
 on_ft = ["js"]
 
 [[plugins]]
-repo = "jdonaldson/vaxe"
+repo = "neovimhaskell/haskell-vim"
 on_ft = ["hs"]
