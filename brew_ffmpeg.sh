@@ -7,14 +7,10 @@ function install_ffmpeg() {
     brew install mpv --with-bundle
 }
 
-function uninstall_ffmpeg() {
-    brew unistall mpv
-    brew uninstall ffmpeg --ignore-dependencies
-}
 
 if [ -z ${check} ]; then
     install_ffmpeg
 else
-    install_ffmpeg
+    brew reinstall ffmpeg
+    brew reinstall mpv
 fi
-
