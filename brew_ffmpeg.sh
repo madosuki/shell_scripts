@@ -15,6 +15,6 @@ function uninstall_ffmpeg() {
 if [ -z ${check} ]; then
     install_ffmpeg
 else
-    install_ffmpeg()
+    install_ffmpeg
 fi
 
