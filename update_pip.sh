@@ -7,9 +7,9 @@ AutoText
 read version
 
 if [ ${version} = "3" ]; then
-    pip3 list --outdated --format=legacy | awk '{print $1}' | xargs sudo pip3 install -U
+    pip3 list --format=legacy | awk '{print $1}' | xargs sudo pip3 install -U
 elif [ ${version} = "2" ]; then
-    pip list --outdated --format=legacy | awk '{print $1}' | xargs sudo pip install -U
+    pip list --format=legacy | awk '{print $1}' | xargs sudo pip install -U
 else
     AutoText
 fi

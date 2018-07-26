@@ -1,0 +1,15 @@
+#!/bin/bash
+
+run_or_stop=${1}
+name=${2}
+
+if [ "start" != ${run_or_stop} -o "stop" != ${run_or_stop} ]; then
+    run_or_stop="restart"
+    name=${1}
+fi
+
+
+
+if [ "" != ${name} ]; then
+    brew services ${run_or_stop} ${name}
+fi

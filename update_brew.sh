@@ -1,5 +1,7 @@
 #!/bin/sh
 
+brew update
+
 cd /usr/local/Homebrew/Library/Taps/homebrew/homebrew-core
 
 git pull
