@@ -7,9 +7,9 @@ AutoText
 read version
 
 if [ ${version} = "3" ]; then
-    pip3 list --format=legacy | awk '{print $1}' | xargs sudo pip3 install -U
+    pip3 list --format=columns | awk '{if(NR>2)print $1}' | xargs pip3 install -U
 elif [ ${version} = "2" ]; then
-    pip list --format=legacy | awk '{print $1}' | xargs sudo pip install -U
+    pip2 list --format=columns | awk '{if(NR>2)print $1}' | xargs pip2 install -U
 else
     AutoText
 fi
