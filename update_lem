@@ -1,0 +1,6 @@
+#!/bin/sh
+
+cd ~/lem
+make uninstall && make distclean
+git pull
+./bootstrap && ./configure --prefix=/Users/kouf/.roswell/ && make -j4 && make install
