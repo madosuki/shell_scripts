@@ -1,5 +1,5 @@
 [[plugins]]
-repo = "/Users/kouf/dein/repos/github.com/Shougo/dein.vim"
+repo = "/home/kouf/dein/repos/github.com/Shougo/dein.vim"
 
 [[plugins]]
 repo = "Shougo/neosnippet.vim"

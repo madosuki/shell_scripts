@@ -3,7 +3,7 @@ if &compatible
     set nocompatible               " Be iMproved
 endif
 
-let s:dein_dir = expand('/Users/kouf/dein')
+let s:dein_dir = expand('/home/kouf/dein')
 let s:dein_repo_dir = s:dein_dir . '/repos/github.com/Shougo/dein.vim'
 
 " Required:
@@ -28,8 +28,8 @@ if dein#load_state(s:dein_dir)
     " endif
     " let g:deoplete#enable_at_startup = 1
 
-    let g:python_host_prog = '/usr/local/bin/python2'
-    let g:python3_host_prog = '/usr/local/bin/python3'
+    let g:python_host_prog = '/usr/bin/python2'
+    let g:python3_host_prog = '/usr/bin/python3'
     call dein#add('Shougo/vimproc.vim', {'build' : 'make'})
     call dein#add('tpope/vim-dispatch')
 
