@@ -1,0 +1,42 @@
+#!/bin/bash
+
+outdir=""
+count=0
+zipname=""
+tmp="unzip -O sjis "
+
+declare -a array=()
+for a in $@; do
+  array=("${array[@]}" ${a})
+done
+
+if [ $# -ge 1 ]; then
+  for x in $@; do
+    count=$(expr ${count} + 1)
+    if [ "${x}" = "--outdir" ]; then
+      if [ ${count} -lt $# ]; then
+        outdir=${array[${count}]}
+      fi
+    elif [ "${x}" = "--file" ]; then
+      if [ ${count} -lt $# ]; then
+        zipname="${array[${count}]}"
+      fi
+    fi
+  done
+fi
+
+if [ "${zipname}" != "" ]; then
+  if [ "${outdir}" != "" ]; then
+    outdir=" -d "${outdir}
+    run="${tmp}${zipname}${outdir}"
+    echo ${run}
+    eval ${run}
+  else
+    if [ $# -ge 1 ]; then
+      run="${tmp}""${zipname}"
+      eval ${run}
+    fi
+  fi
+else
+  echo "Please give purpose zip file name"
+fi
