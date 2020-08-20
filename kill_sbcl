@@ -1,0 +1,3 @@
+#!/bin/sh
+
+ps -A | grep sbcl | awk '{ print $1 }' | xargs kill -9
