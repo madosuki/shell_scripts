@@ -1,0 +1,16 @@
+#!/bin/sh
+
+if type ncu > /dev/null 2>&1; then
+
+  cd ${HOME}/.config/yarn/global
+
+  ncu -u
+
+  yarn install
+
+else
+
+  echo "not installed ncu(npm-check-updates).\n'npm i -g npm-check-updates' or 'yarn global add npm-check-updates'"
+
+fi
+
